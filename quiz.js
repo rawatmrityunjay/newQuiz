@@ -90,16 +90,21 @@ function getQuestion(){
     document.getElementById("8").innerHTML = question1[i]["option"][3]
 
     var correctAnswer=Array.prototype.slice.call(document.getElementsByClassName("right"))
-    var correctAnswer=Array.prototype.slice.call(document.getElementsByClassName("wrong"))
+    var wrongAnswer=Array.prototype.slice.call(document.getElementsByClassName("wrong"))
 
     if(correctAnswer?.length> 0){
         correctAnswer.forEach(element => {
             element.classList.remove('right')
-            element.classList.remove('wrong')
+            // element.classList.remove('wrong')
         });
     }
 
-
+    if(wrongAnswer?.length> 0){
+        wrongAnswer.forEach(element => {
+            // element.classList.remove('right')
+            element.classList.remove('wrong')
+        });
+    }
 
     i = i+1
 
