@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+    <script src="../javascript/quiz.js"></script>
+</head>
+<body>
+    
+
+<div class="bg-pic">
+    
+    <div >
+        <div class="container">
+        <p class="heading">Quiz</p>
+
+        <div class="flex"><p class="question_number"></p><p class="Question"></p></div>
+
+    <div class="option_container">
+        
+
+            <ol>
+
+                <li>
+                    <div class="option" onclick="getResult(this)" id="0"><p class="text" id="5" ></p></div>
+                </li>
+
+                <li>
+                    <div class="option" onclick="getResult(this)" id="1"><div class="text" id="6"></div></div>
+                </li>
+
+            </ol>            
+
+        
+            <ol>
+                <li>
+                    <div class="option" onclick="getResult(this)" id="2"><div class="text" id="7"></div></div>
+                </li>
+
+                <li>
+                    <div class="option" onclick="getResult(this)" id="3"><div class="text" id="8"></div></div>
+                </li>
+            </ol>
+            
+
+
+
+
+        
+    </div>
+
+
+  
+
+    </div>
+
+    </div>
+
+    <button type="button" class="next" onclick="getQuestion()">Next</button>
+
+
+    <div class="result_container hide">
+        <div class="heading2">Your Result</div>
+
+        <table>
+
+
+            <tr>
+
+                <td class="upper_td">Total Question </td>
+                <td class=" lower_td " id="tq"></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="upper_td">Question Attempt</td>
+                <td class="lower_td" id="Question_Attempt"></td>
+
+            </tr>
+
+            <tr>
+                <td class="upper_td">Correct</td>
+                <td class="lower_td" id="correct"></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="upper_td">Incorrect</td>
+                <td class="lower_td" id="incorrect"></td>
+
+            </tr>
+
+            <tr>
+
+                <td class="upper_td">Total Score</td>
+                <td class="lower_td" id="ts"></td>
+
+            </tr>
+
+
+
+
+
+
+        </table>
+
+        <button type="reset" class="try_again" onclick="reload()">Try Again</button>
+    </div>
+ </div>
+
+</body>
+</html>
