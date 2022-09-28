@@ -131,7 +131,6 @@ function quiz_over(){
 
 
 
-    reload();
 }
 
 
