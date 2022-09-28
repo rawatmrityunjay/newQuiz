@@ -218,13 +218,16 @@ table{
     }
     .bg-pic > div > .container{
         width: auto;
-        height: 720px;
+        height: 600px;
+        margin-top: 30px;
     }
     .Question{
         font-size: 25px;
+        margin-top: 25px;
     }
     .question_number{
         font-size: 25px;
+        margin-top: 25px;
     }
     .option{
         margin-right: 60px;
@@ -236,7 +239,7 @@ table{
     }
     .bg-pic{
         width: auto;
-        height: 896px;
+        height: 667px;
         
     }
     .heading{
@@ -247,6 +250,23 @@ table{
         font-size: 25px;
         text-align: center;
         margin-top: 30px
+    }
+    .result_container{
+
+        width: auto;
+        margin-left: 0px
+
+    }
+    .try_again{
+
+
+        margin-left: 130px;
+
+    }
+    .option_container{
+
+        margin-top: 15px;
+
     }
     }
   
